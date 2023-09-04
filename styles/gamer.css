@@ -129,7 +129,7 @@ nav {
 
 /* we are gamer section start here  */
 .we-are-gamer {
-    background: linear-gradient(to top, rgb(242, 242, 243), rgb(213, 225, 230));
+    background: linear-gradient(to top, rgb(248, 248, 248), rgb(248, 248, 248));
 }
 
 .gamer-container {
@@ -167,6 +167,74 @@ nav {
     padding: 1rem 0;
 }
 
+/* we are gamer section ends here  */
+
+
+/* online games section start here  */
+.online-games{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.online-games-content{
+    text-align: center;
+    padding: 3rem 0;
+}
+.game{
+    width: 15rem;
+}
+.game img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.online-games-container{
+    /* background-color: #4EC5F7; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.online-games-content h1{
+font-weight: 700;
+font-size: 3rem;
+}
+.funny{
+    color: blueviolet;
+}
+.online-games-content p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #534C64;
+}
+/* online games section ends here  */
+
+
+/* play instantly section start here  */
+.play-instantly{
+    background: linear-gradient(to top, rgb(248, 248, 248), rgb(248, 248, 248));
+}
+.instantly-container{
+    max-width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#img-2{
+    position: relative;
+    bottom: 20rem;
+    right: 100px;
+}
+.instantly-content h1{
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.instantly-content{
+    margin: 0 3rem 2rem 1rem;
+    text-align: center;
+}
+/* play instantly section end here  */
 
 
 /* responsive is here  */
@@ -220,6 +288,20 @@ nav {
     .we-are-gamer {
         max-width: 576px;
     }
+    .online-games-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .instantly-container{
+        flex-direction: column;
+
+    }
+    #img-2{
+        position: relative;
+        bottom: 200px;
+        left: 0;
+        right: 100px;
+    }
 }
 
 
@@ -268,5 +350,18 @@ nav {
 
     .we-are-gamer {
         max-width: 576px;
+    }
+    .online-games-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .instantly-container{
+        flex-direction: column;
+
+    }
+    #img-2{
+        position: relative;
+        bottom: 200px;
+        left: 0;
+        right: 100px;
     }
 }
