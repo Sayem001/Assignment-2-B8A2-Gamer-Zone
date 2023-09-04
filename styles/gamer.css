@@ -125,11 +125,56 @@ nav {
     margin-left: 5rem;
 }
 
+/* goat section ends here  */
+
+/* we are gamer section start here  */
+.we-are-gamer {
+    background: linear-gradient(to top, rgb(242, 242, 243), rgb(213, 225, 230));
+}
+
+.gamer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.gamer-container img {
+    width: 40rem;
+    padding: 3rem 5rem;
+}
+
+.gamer-content {
+    text-align: end;
+}
+
+.gamer-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;
+    padding: 1rem 0;
+}
+
+.btn-know-more {
+    background: linear-gradient(to left, rgb(223, 79, 163), rgb(223, 45, 148));
+}
+
+.gamer-content h2 {
+    color: red;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+
+
 /* responsive is here  */
 
 /* responsive for small mobile device  */
 @media screen and (max-width:576px) {
     nav {
+        max-width: 576px;
         flex-direction: column;
         padding-left: 10rem;
 
@@ -148,18 +193,38 @@ nav {
         margin: 2rem 0;
         padding: 0.5rem;
     }
-.goat-container{
-    flex-direction: column-reverse;
+
+    .goat-container {
+        flex-direction: column-reverse;
+        max-width: 576px;
+    }
+
+    .goat-image img {
+        height: 20rem;
+        width: 25rem;
+        margin: 0 auto;
+    }
+
+    .gamer-container {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .gamer-container img {
+        height: 20rem;
+        width: 25rem;
+        margin: 5rem auto;
+    }
+
+    .we-are-gamer {
+        max-width: 576px;
+    }
 }
-.goat-image img{
-    height: 20rem;
-    width: 25rem;
-    margin: 5rem auto;
-}
-.goat-btn-container{
-    flex-direction: column;
-}
-}
+
+
+
+
 
 /* responsive for tablet or medium device  */
 @media screen and (min-width:577px) and (max-width:1000px) {
@@ -167,13 +232,41 @@ nav {
         flex-direction: column-reverse;
         margin: 0 auto;
     }
-    .goat-container{
+
+    .goat-container {
         flex-direction: column-reverse;
     }
-    .goat-image img{
+
+    .goat-image img {
         height: 30rem;
         width: 35rem;
         margin: 5rem auto;
     }
 
+    .goat-container {
+        flex-direction: column-reverse;
+        max-width: 576px;
+    }
+
+    .goat-image img {
+        height: 20rem;
+        width: 25rem;
+        margin: 0 auto;
+    }
+
+    .gamer-container {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .gamer-container img {
+        height: 20rem;
+        width: 25rem;
+        margin: 5rem auto;
+    }
+
+    .we-are-gamer {
+        max-width: 576px;
+    }
 }
