@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
 }
 
 
@@ -10,6 +11,14 @@
     color: rgb(206, 26, 131);
 }
 
+.btn {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 2rem;
+    border: 0;
+}
 
 /* nav section start here  */
 nav {
@@ -17,6 +26,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    padding: 2rem 0;
 }
 
 .gamer-title {
@@ -60,17 +70,73 @@ nav {
 
 /* nav section end here  */
 
+
+/* goat section start here  */
+.goat {
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(230, 214, 228));
+}
+
+.goat-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.goat-content h2 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.goat-content h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    color: rgba(218, 22, 159, 0.932);
+    padding: 1rem 0;
+}
+
+.goat-content p {
+    display: flex;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #534C64;
+}
+
+.goat-content>p>img {
+    padding-right: 1rem;
+}
+
+.goat-btn-container {
+    padding: 2rem 0;
+}
+
+.btn-sign-in {
+    background: linear-gradient(to left, rgb(223, 79, 163), rgb(223, 45, 148));
+}
+
+.btn-go-rogue {
+    background-color: #4EC5F7;
+    margin-left: 1rem;
+}
+
+.goat-image img {
+    width: 40rem;
+    margin-left: 5rem;
+}
+
 /* responsive is here  */
 
 /* responsive for small mobile device  */
 @media screen and (max-width:576px) {
     nav {
         flex-direction: column;
+        padding-left: 10rem;
+
     }
 
     .title-content>ul {
         flex-direction: column;
-        margin: 0 auto;
         padding: 1rem 0;
     }
 
@@ -82,13 +148,32 @@ nav {
         margin: 2rem 0;
         padding: 0.5rem;
     }
-
+.goat-container{
+    flex-direction: column-reverse;
+}
+.goat-image img{
+    height: 20rem;
+    width: 25rem;
+    margin: 5rem auto;
+}
+.goat-btn-container{
+    flex-direction: column;
+}
 }
 
 /* responsive for tablet or medium device  */
-@media screen and (min-width:576px)and (max-width:1000px){
-nav{
-    flex-direction: column-reverse;
-}
+@media screen and (min-width:577px) and (max-width:1000px) {
+    nav {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .goat-container{
+        flex-direction: column-reverse;
+    }
+    .goat-image img{
+        height: 30rem;
+        width: 35rem;
+        margin: 5rem auto;
+    }
 
 }
