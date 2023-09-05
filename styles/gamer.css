@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
-    margin: 0;
 }
 
 
@@ -299,7 +298,6 @@ footer {
     background-color: black;
     color: white;
     padding: 10rem;
-    width: 100%;
 }
 
 .footer-title {
@@ -401,13 +399,14 @@ footer {
 
     .gamer-container img {
         height: 20rem;
-        width: 25rem;
-        margin: 5rem auto;
+        width: 25em;
+        margin:0 0;
     }
 
     .we-are-gamer {
         max-width: 576px;
     }
+    
 
     .online-games-container {
         grid-template-columns: repeat(1, 1fr);
@@ -420,11 +419,16 @@ footer {
 
     #img-2 {
         position: relative;
-        bottom: 200px;
+        bottom: 100px;
         left: 0;
-        right: 100px;
+        right: 50px;
+        height: 10rem;
+        width: 10rem;
     }
-
+    #img-1{
+    height: 20rem;
+    width: 20rem;
+    }
     .games-catagory-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
