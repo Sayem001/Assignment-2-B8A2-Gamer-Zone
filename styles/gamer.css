@@ -239,7 +239,7 @@ nav {
 }
 
 .instantly-container {
-    max-width: 80%;
+    /* max-width: 80%; */
     margin: 3rem auto;
     display: flex;
     justify-content: space-around;
@@ -363,8 +363,6 @@ footer {
     nav {
         max-width: 576px;
         flex-direction: column;
-        padding-left: 10rem;
-
     }
 
     .title-content>ul {
