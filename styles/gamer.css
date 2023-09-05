@@ -237,6 +237,26 @@ font-size: 3rem;
 /* play instantly section end here  */
 
 
+
+/* gmaes catagory section start here  */
+.game-catagory{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.games-catagory-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.game-catagory img{
+    margin-right: 1rem;
+}
+
 /* responsive is here  */
 
 /* responsive for small mobile device  */
@@ -302,6 +322,17 @@ font-size: 3rem;
         left: 0;
         right: 100px;
     }
+    .games-catagory-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .game-catagory img{
+        margin-right: 1rem;
+        width: 2rem;
+    }
+    .game-catagory p{
+        font-size: 0.5rem;
+    }
 }
 
 
@@ -363,5 +394,16 @@ font-size: 3rem;
         bottom: 200px;
         left: 0;
         right: 100px;
+    }
+    .games-catagory-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .game-catagory img{
+        margin-right: 1rem;
+        width: 2rem;
+    }
+    .game-catagory p{
+        font-size: 0.5rem;
     }
 }
