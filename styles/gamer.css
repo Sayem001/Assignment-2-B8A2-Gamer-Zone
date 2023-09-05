@@ -273,6 +273,12 @@ nav {
     align-items: center;
     padding: 1rem;
 }
+.game-catagory:hover{
+border: 2px solid rgb(223, 43, 169);
+border-radius: 2rem;
+color: rgb(187, 20, 165);
+font-weight: 700;
+}
 
 .games-catagory-container {
     display: flex;
