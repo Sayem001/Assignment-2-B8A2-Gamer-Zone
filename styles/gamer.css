@@ -184,14 +184,30 @@ nav {
 .game {
     width: 15rem;
 }
+.online-game-img:hover{
+    border: 5px solid red;
+    border-radius: 2rem;
+    opacity:0.5;
+    
+}
 
+.play-pause{
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 15rem;
+    left: 6rem;
+    opacity: 0;
+}
+.play-pause:hover{
+    opacity: 1;
+}
 .game img {
     width: 100%;
     margin-bottom: 1rem;
 }
 
 .online-games-container {
-    /* background-color: #4EC5F7; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
